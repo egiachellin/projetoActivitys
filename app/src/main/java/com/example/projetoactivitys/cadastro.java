@@ -33,7 +33,7 @@ public class cadastro extends AppCompatActivity {
             startActivity(cadastroFalhou);
         } else {
             Intent cadastroSucesso = new Intent(this, cadastroSucesso.class);
-            cadastroSucesso.putExtra("nomeDigitado", toString());
+            cadastroSucesso.putExtra("nomeDigitado", nomeDigitado);
             startActivity(cadastroSucesso);
         }
     }
